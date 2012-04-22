@@ -1,0 +1,142 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="Mu_genotype1.Trends"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mu_genotype1"
+    xmlns:common="using:Mu_genotype1.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ImageBrush x:Key="background" ImageSource="Assets/circlebg.jpg"/>
+        <!-- Collection of items displayed by this page -->
+    </UserControl.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{StaticResource background}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ProgressBar Name="progbar" IsIndeterminate="True" Margin="0,0,0,120"/>
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <TextBlock x:Name="pageTitle" Text="Trends" Style="{StaticResource PageHeaderTextStyle}" Grid.Column="1"/>
+        </Grid>
+
+        <!-- Horizontal scrolling grid used in most view states -->
+        <ScrollViewer
+            x:Name="gridScrollViewer"
+            AutomationProperties.AutomationId="DetailsScrollViewer"
+            Grid.Row="1"
+            Padding="0,-14,0,50"
+            Style="{StaticResource HorizontalScrollViewerStyle}">
+
+            <StackPanel x:Name="gridLayoutPanel" Margin="120,0,120,0" Orientation="Horizontal">
+                <StackPanel Width="480" Margin="0,4,14,0">
+                    <TextBlock Name="GNameTb" Margin="0,0,18,20" Style="{StaticResource SubheaderTextStyle}" MaxHeight="60"/>
+                    <Image Name="GImage" Height="400" Margin="0,0,18,20" Stretch="UniformToFill"/>
+                    <TextBlock Name="GDesc" Margin="0,0,18,0" Style="{StaticResource SubheaderTextStyle}"/>
+                </StackPanel>
+                <GridView Name="itemsGridView"
+                    AutomationProperties.AutomationId="ItemGridView"
+                    AutomationProperties.Name="Items In Group" 
+                    ItemClick="itemsGridView_ItemClick_1"
+                          SelectionChanged="itemsGridView_SelectionChanged">                
+                    <GridView.ItemContainerStyle>
+                        <Style TargetType="Panel">
+                            <Setter Property="Margin" Value="52,0,0,10"/>
+                        </Style>
+                    </GridView.ItemContainerStyle>
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Width="400">
+                                <Image Name="AlbumArtHolder" Source="{Binding image}" Stretch="UniformToFill"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Name="TitleTb" Margin="5" TextWrapping="Wrap" Text="{Binding Title}" Style="{StaticResource SubheaderTextStyle}" />
+                                    <TextBlock Name="ArtistTb" Text="{Binding Artist}" Style="{StaticResource ItemTextStyle}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Vertical scrolling list only used when snapped -->
+        <ScrollViewer
+            x:Name="snappedScrollViewer"
+            AutomationProperties.AutomationId="SnappedDetailsScrollViewer"
+            Grid.Row="1"
+            Visibility="Collapsed"
+            Style="{StaticResource VerticalScrollViewerStyle}">
+
+            <StackPanel>
+                <TextBlock Text="{Binding Group.Subtitle}" Margin="20,0,18,20" Style="{StaticResource TitleTextStyle}" MaxHeight="60"/>
+                <Image Source="{Binding Group.Image}" Margin="20,0,18,0" MaxHeight="160" Stretch="UniformToFill"/>
+                <TextBlock Margin="20,20,18,30" Text="{Binding Group.Description}" Style="{StaticResource BodyTextStyle}"/>
+                <ListView
+                    AutomationProperties.AutomationId="ItemListView"
+                    AutomationProperties.Name="Items In Group"
+                    Margin="10,0,0,60"
+                    ItemTemplate="{StaticResource Standard80ItemTemplate}"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup>
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="gridLayoutPanel" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="100,0,90,0"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+
+                <!--
+                    The back button and title have different styles when snapped, and the list representation is substituted
+                    for the grid displayed in all other view states
+                -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="gridScrollViewer" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="snappedScrollViewer" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>

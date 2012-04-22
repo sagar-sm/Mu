@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2cbfe7a6-ba43-43c7-b9f9-fbd3141b8b10"
+  name="Common"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6efb4e73-bb5b-4844-bbc8-de8da17445e5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Mu_genotype1.Common"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="84c730ef-537f-4085-9937-9904385cf404"
+        name="LayoutAwarePage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b6861918-68ab-4cfb-bbb0-3a76d219e84c"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Sumeet/Mu/Mu_genotype1/Mu_genotype1/bin/Debug/Mu_genotype1.exe Namespace=Mu_genotype1.Common Type=LayoutAwarePage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b5815e3e-513f-4a85-a3b7-b48f7fb1077e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="16938c8b-f833-406d-819f-f96bf7719cbd">
+                <propertyInstance
+                  Id="629895d0-6128-4eb5-831b-5018cd6bdd87"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b2d90d2-bdac-48d7-b6f4-5b1713bdffe3">
+                <propertyInstance
+                  Id="8e6f2bda-389e-4300-8774-dd93f48bf555"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0e47430-f1f2-4d4e-85a5-17fd30f58eac">
+                <propertyInstance
+                  Id="b7e60d8d-6320-4ab6-b334-724c76122d62"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91a67588-a443-4813-9e6f-8f86e6acc50a">
+                <propertyInstance
+                  Id="7bc49bab-5ce8-43ce-a315-26a087530e9f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e75b8e88-d156-4814-8041-4ac73771dc20">
+                <propertyInstance
+                  Id="aebddf95-b6b7-4db8-9d01-f2bfc3d9f112"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b79a45ef-22d3-4e9a-9ed1-aa870f576fb4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="63bd4b0b-bb3f-4359-9337-9fee42c4012c"
+              LastKnownName="Page"
+              LastKnownLocation="Package12_1623.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

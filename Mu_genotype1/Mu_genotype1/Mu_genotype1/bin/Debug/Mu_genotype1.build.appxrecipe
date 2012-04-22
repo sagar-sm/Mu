@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SUMEET-8</Machine>
+    <WindowsUser>Sumeet</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <Modified>2012-04-13T23:26:18.003</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\Mu_genotype1.exe">
+      <PackagePath>Mu_genotype1.exe</PackagePath>
+      <Modified>2012-04-13T23:34:50.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\Mu_genotype1.pdb">
+      <PackagePath>Mu_genotype1.pdb</PackagePath>
+      <Modified>2012-04-13T23:34:50.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Json45r2\Bin\Metro\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2012-04-13T02:47:10.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Twitterizer-Twitterizer-6511fa9\Twitterizer-Twitterizer-6511fa9\ExampleApplications\Twitterizer-Web\Bin\Twitterizer2.dll">
+      <PackagePath>Twitterizer2.dll</PackagePath>
+      <Modified>2012-04-09T21:43:09.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Json45r2\Bin\Metro\Newtonsoft.Json.pdb">
+      <PackagePath>Newtonsoft.Json.pdb</PackagePath>
+      <Modified>2012-04-13T02:47:11.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Twitterizer-Twitterizer-6511fa9\Twitterizer-Twitterizer-6511fa9\ExampleApplications\Twitterizer-Web\Bin\Twitterizer2.pdb">
+      <PackagePath>Twitterizer2.pdb</PackagePath>
+      <Modified>2012-04-09T21:43:10.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Json45r2\Bin\Metro\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+      <Modified>2012-04-13T02:47:11.334</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Downloads\Twitterizer-Twitterizer-6511fa9\Twitterizer-Twitterizer-6511fa9\ExampleApplications\Twitterizer-Web\Bin\Twitterizer2.xml">
+      <PackagePath>Twitterizer2.xml</PackagePath>
+      <Modified>2012-04-09T21:43:10.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2012-04-02T21:38:49.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <Modified>2012-04-02T21:38:49.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <Modified>2012-04-02T21:38:49.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <Modified>2012-04-02T21:38:49.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\ArtistDetails.xaml">
+      <PackagePath>ArtistDetails.xaml</PackagePath>
+      <Modified>2012-04-09T01:16:53.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\RecoArtists.xaml">
+      <PackagePath>RecoArtists.xaml</PackagePath>
+      <Modified>2012-04-09T05:32:19.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\RecoTracks.xaml">
+      <PackagePath>RecoTracks.xaml</PackagePath>
+      <Modified>2012-04-09T16:11:55.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\TrackDetails.xaml">
+      <PackagePath>TrackDetails.xaml</PackagePath>
+      <Modified>2012-04-09T16:25:47.491</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\Trends.xaml">
+      <PackagePath>Trends.xaml</PackagePath>
+      <Modified>2012-04-13T23:34:43.964</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\TrendsDetails.xaml">
+      <PackagePath>TrendsDetails.xaml</PackagePath>
+      <Modified>2012-04-13T23:09:14.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\Tweet.xaml">
+      <PackagePath>Tweet.xaml</PackagePath>
+      <Modified>2012-04-13T06:21:58.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-04-02T21:38:49.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\BlankPage.xaml">
+      <PackagePath>BlankPage.xaml</PackagePath>
+      <Modified>2012-04-10T03:22:37.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-04-02T21:38:49.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sumeet\Mu\Mu_genotype1\Mu_genotype1\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-04-13T23:26:17.562</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

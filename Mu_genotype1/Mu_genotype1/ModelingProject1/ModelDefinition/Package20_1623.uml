@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="61fa0a28-0dae-4a15-96f9-5d2f7376fe1a"
+  name="Twitterizer"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="32cccbe5-2c46-44c6-a581-5ae3eaa54e70"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Twitterizer"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="204cb65c-87ca-4a45-a707-8bcff1c3d9ff">
+      <profileInstance
+        Id="093f2c7a-917d-4ab6-a6df-c9e129d45afa"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="354c630b-c6da-440f-a07a-98a382d333c3"
+        name="OAuthTokenResponse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="77a09f6f-6505-496d-8e21-ee245dba81e9"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/Sumeet/Downloads/Twitterizer-Twitterizer-6511fa9/Twitterizer-Twitterizer-6511fa9/ExampleApplications/Twitterizer-Web/Bin/Twitterizer2.dll Namespace=Twitterizer Type=OAuthTokenResponse"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f338b338-4c25-4702-a9e0-22de1cfb60f0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d73f120-3c9e-4abb-82ff-d7cbad3187ab">
+                <propertyInstance
+                  Id="a739bc31-a5ad-436d-9500-3910ad3d9200"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0524c95-eb59-403c-80dd-fe9f81a4ab91">
+                <propertyInstance
+                  Id="6bcb2538-6b41-4ec3-a48a-0849d5dc0e88"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4484caa-b52a-4e78-80d6-f17c10f5d4bb">
+                <propertyInstance
+                  Id="d9a7c149-e94f-4869-b269-1b6579496864"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d07a956d-f814-47a7-8caf-4679366d3a88">
+                <propertyInstance
+                  Id="28c7fc2c-4957-4f60-b5e8-76f3a1f2106c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="500b9094-9432-4d6f-8b48-221084eb33e8">
+                <propertyInstance
+                  Id="e0d030ac-062f-4d9e-87dc-1adc076727d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

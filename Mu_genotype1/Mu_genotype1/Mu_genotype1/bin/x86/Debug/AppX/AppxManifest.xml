@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="A757FDD0-0C8A-441F-B21B-27339975303F" Publisher="CN=Sagar" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Properties>
+    <DisplayName>Mu_genotype1</DisplayName>
+    <PublisherDisplayName>Sagar</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>Mu_genotype1</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Mu.exe" EntryPoint="Mu_genotype1.App">
+      <VisualElements DisplayName="Mu_genotype1" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Mu_genotype1" ForegroundText="light" BackgroundColor="#222222">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="Mu_genotype1.app">
+          <BackgroundTasks>
+            <Task Type="audio" />
+            <Task Type="controlChannel" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="removableStorage" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="videosLibrary" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+  <Dependencies>
+    <PackageDependency Name="Microsoft.VCLibs.110.Debug" MinVersion="11.0.0.0" />
+  </Dependencies>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Bing.Maps.dll</Path>
+        <ActivatableClass ActivatableClassId="Bing.Maps.Location" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.LocationRect" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.StringToLocationConverter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.ViewChangedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.ViewChangeStartedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.ViewChangeEndedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.TargetViewChangedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.TileDownloadCompletedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.CopyrightChangedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapStyleChangedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapShape" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapShapeCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapShapeLayer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapShapeLayerCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapUIElementCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapTileLayer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapTileLayerCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.Map" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapLayer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapAutomationPeer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.LocationCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapMultiPoint" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapPolygon" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.MapPolyline" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.Pushpin" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Bing.Maps.PushpinAutomationPeer" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>
